@@ -1,0 +1,224 @@
+﻿@model IEnumerable<BuscadorDeCompatibilidadeWeb.Models.VoluntarioModel>
+
+@{
+    ViewBag.Title = "Voluntarios";
+}
+
+<h2>Voluntários disponíveis</h2>
+<link href="~/Content/Site.css" rel="stylesheet" />
+<style>
+    th {
+        color: cornflowerblue;
+    }
+</style>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Compatibilidade)
+            </th>
+            <th class="thMaior">
+                @Html.DisplayNameFor(model => model.NomeCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th class="thMaior">
+                @Html.DisplayNameFor(model => model.EnderecoCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CEP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefoneResidencial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefoneCelular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NivelDeEscolaridade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Profissao)
+            </th>
+            <th class="thMaior">
+                @Html.DisplayNameFor(model => model.AreaEmQueDesejaAtuar)
+            </th>
+            <th class="thMaior">
+                @Html.DisplayNameFor(model => model.PossuiExperienciaEmProjetosSociais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.De)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisponibilidadeDeDias)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tarde)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Word)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Excel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PowerPoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Project)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CRM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photoshop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Corel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Illustrator)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fotografia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InDesign)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Compatibilidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CPF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnderecoCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bairro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CEP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TelefoneResidencial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TelefoneCelular)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NivelDeEscolaridade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profissao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AreaEmQueDesejaAtuar)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PossuiExperienciaEmProjetosSociais)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quais)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.De)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisponibilidadeDeDias)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Manha)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tarde)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Word)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Excel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PowerPoint)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Project)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CRM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Photoshop)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Corel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Illustrator)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fotografia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InDesign)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

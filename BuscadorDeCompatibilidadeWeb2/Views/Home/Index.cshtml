@@ -1,0 +1,30 @@
+﻿@model BuscadorDeCompatibilidadeWeb.Models.VagaModel
+
+@{
+    ViewBag.Title = "Vagas";
+}
+
+<h2>Listas</h2>
+
+@using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container">
+        <div class="row">
+            <label>Selecione a lista de vagas</label>
+            <input type="file" name="fileVagas" required />
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <label>Selecione a lista de voluntários</label>
+            <input type="file" name="fileVoluntarios" required />
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <input type="submit" name="Submit" id="Submit" value="Avançar" class="btn btn-primary" />
+        </div>
+    </div>
+}

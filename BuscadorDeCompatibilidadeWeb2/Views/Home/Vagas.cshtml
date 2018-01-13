@@ -1,0 +1,26 @@
+﻿@model BuscadorDeCompatibilidadeWeb.Models.VagaModel
+
+@{
+    ViewBag.Title = "Vagas";
+}
+
+<h2>Vagas abertas</h2>
+
+
+@using (Html.BeginForm())
+{
+    if (Model != null)
+    {
+        for (var i = 0; i < Model.ListaVaga.Count(); i++)
+        {
+            <hr />
+
+            @Html.ActionLink(
+                     Model.ListaVaga[i].VagaNome,
+                     "SelecionarVaga",
+                     null,
+                     new { ID = Model.ListaVaga[i].VagaID },
+                     new { onclick = "$(this).parents('form').attr('action', $(this).attr('href'));$(this).parents('form').submit();return false;" })
+        }
+    }
+}
