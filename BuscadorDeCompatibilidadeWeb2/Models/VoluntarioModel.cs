@@ -8,6 +8,7 @@ namespace BuscadorDeCompatibilidadeWeb.Models
     {
         public const string NOME_COMPLETO = "Nome completo";
         public const string GENERO = "Gênero";
+        public const string DATA_NASCIMENTO = "Data de nascimento";
         public const string ENDERECO_COMPLETO = "Endereço completo";
         public const string TEL_RESIDENCIAL = "Telefone residencial";
         public const string CELULAR = "Telefone celular";
@@ -24,6 +25,8 @@ namespace BuscadorDeCompatibilidadeWeb.Models
         public string NomeCompleto { get; set; }
         [Display(Name = GENERO)]
         public string Genero { get; set; }
+        [Display(Name = DATA_NASCIMENTO)]
+        public string DataNascimento { get; set; }
         public string RG { get; set; }
         public string CPF { get; set; }
         [Display(Name = ENDERECO_COMPLETO)]

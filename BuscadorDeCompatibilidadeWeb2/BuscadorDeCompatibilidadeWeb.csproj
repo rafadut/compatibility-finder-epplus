@@ -197,6 +197,7 @@
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb20180112075704 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb20180113030627 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\estudantesdapatria - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml">
       <SubType>Designer</SubType>
     </None>
