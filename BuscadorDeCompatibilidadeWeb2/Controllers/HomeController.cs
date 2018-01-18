@@ -13,7 +13,7 @@ namespace BuscadorDeCompatibilidadeWeb.Controllers
         #region Constantes
 
         public const string PASTA_APP_DATA = "~/App_Data/";
-        public const string NOME_ARQUIVO_EXCEL_VAGAS = "Vagas-report.xlsx";
+        public const string NOME_ARQUIVO_EXCEL_VAGAS = "Cadastro Estudante da Pátria - Vaga-report.xlsx";
         public const string NOME_ARQUIVO_EXCEL_VOLUNTARIOS = "Cadastro Estudante da Pátria-report.xlsx";
         public const string CONHECIMENTO_1 = "Word";
         public const string CONHECIMENTO_2 = "Excel";
