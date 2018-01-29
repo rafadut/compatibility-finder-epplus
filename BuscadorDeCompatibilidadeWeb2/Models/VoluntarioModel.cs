@@ -6,6 +6,7 @@ namespace BuscadorDeCompatibilidadeWeb.Models
 {
     public class VoluntarioModel : Conhecimento
     {
+        public const string VAGA_DESEJADA = "Vaga desejada";
         public const string NOME_COMPLETO = "Nome completo";
         public const string GENERO = "Gênero";
         public const string DATA_NASCIMENTO = "Data de nascimento";
@@ -21,6 +22,8 @@ namespace BuscadorDeCompatibilidadeWeb.Models
         public const string DISPONIBILIDADE = "Disponibilidade de dias";
         public const string MANHA = "Manhã";
 
+        [Display(Name = VAGA_DESEJADA)]
+        public string VagaDesejada { get; set; }
         [Display(Name = NOME_COMPLETO)]
         public string NomeCompleto { get; set; }
         [Display(Name = GENERO)]

@@ -62,7 +62,7 @@ namespace BuscadorDeCompatibilidadeWeb.Controllers
                         itens.Add(item);
                     }
 
-                    if (planilha.Equals(NOME_ARQUIVO_EXCEL_VAGAS))
+                    if (planilha.Contains(NOME_ARQUIVO_EXCEL_VAGAS))
                     {
                         return PreencherVagaModel(itens);
                     }
@@ -111,40 +111,41 @@ namespace BuscadorDeCompatibilidadeWeb.Controllers
             {
                 List<string> item = itens[i] as List<string>;
                 VoluntarioModel voluntario = new VoluntarioModel();
-                voluntario.NomeCompleto = item[1];
-                voluntario.Genero = item[2];
-                voluntario.DataNascimento = item[3];
-                voluntario.RG = item[4];
-                voluntario.CPF = item[5];
-                voluntario.EnderecoCompleto = item[6];
-                voluntario.Bairro = item[7];
-                voluntario.CEP = item[8];
-                voluntario.Cidade = item[9];
-                voluntario.Estado = item[10];
-                voluntario.TelefoneResidencial = item[11];
-                voluntario.TelefoneCelular = item[12];
-                voluntario.Email = item[13];
-                voluntario.NivelDeEscolaridade = item[14];
-                voluntario.Profissao = item[15];
-                voluntario.AreaEmQueDesejaAtuar = item[16];
-                voluntario.Other = item[17];
-                voluntario.PossuiExperienciaEmProjetosSociais = item[18];
-                voluntario.Quais = item[19];
-                voluntario.De = item[20];
-                voluntario.Ate = item[21];
-                voluntario.DisponibilidadeDeDias = item[22];
-                voluntario.Manha = item[23];
-                voluntario.Tarde = item[24];
-                voluntario.Word = item[25];
-                voluntario.Excel = item[26];
-                voluntario.PowerPoint = item[27];
-                voluntario.Project = item[28];
-                voluntario.CRM = item[29];
-                voluntario.Photoshop = item[30];
-                voluntario.Corel = item[31];
-                voluntario.Illustrator = item[32];
-                voluntario.Fotografia = item[33];
-                voluntario.InDesign = item[34];
+                voluntario.VagaDesejada = item[1];
+                voluntario.NomeCompleto = item[2];
+                voluntario.Genero = item[3];
+                voluntario.DataNascimento = item[4];
+                voluntario.RG = item[5];
+                voluntario.CPF = item[6];
+                voluntario.EnderecoCompleto = item[7];
+                voluntario.Bairro = item[8];
+                voluntario.CEP = item[9];
+                voluntario.Cidade = item[10];
+                voluntario.Estado = item[11];
+                voluntario.TelefoneResidencial = item[12];
+                voluntario.TelefoneCelular = item[13];
+                voluntario.Email = item[14];
+                voluntario.NivelDeEscolaridade = item[15];
+                voluntario.Profissao = item[16];
+                voluntario.AreaEmQueDesejaAtuar = item[17];
+                voluntario.Other = item[18];
+                voluntario.PossuiExperienciaEmProjetosSociais = item[19];
+                voluntario.Quais = item[20];
+                voluntario.De = item[21];
+                voluntario.Ate = item[22];
+                voluntario.DisponibilidadeDeDias = item[23];
+                voluntario.Manha = item[24];
+                voluntario.Tarde = item[25];
+                voluntario.Word = item[26];
+                voluntario.Excel = item[27];
+                voluntario.PowerPoint = item[28];
+                voluntario.Project = item[29];
+                voluntario.CRM = item[30];
+                voluntario.Photoshop = item[31];
+                voluntario.Corel = item[32];
+                voluntario.Illustrator = item[33];
+                voluntario.Fotografia = item[34];
+                voluntario.InDesign = item[35];
 
                 voluntarios.Add(voluntario);
             }
