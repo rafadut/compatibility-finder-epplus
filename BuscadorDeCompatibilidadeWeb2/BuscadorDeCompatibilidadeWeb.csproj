@@ -190,16 +190,21 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="App_Data\Cadastro Estudante da Pátria - Vaga-report.xlsx" />
+    <Content Include="App_Data\Cadastro Estudante da Pátria-report.xlsx" />
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb-dev-as - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb20171231025741 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb20171231030719 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb20180112075704 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BuscadorDeCompatibilidadeWeb20180113030627 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\estudantesdapatria - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -237,9 +242,7 @@
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Home\Vagas.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

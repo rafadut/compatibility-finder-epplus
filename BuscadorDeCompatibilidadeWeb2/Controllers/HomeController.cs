@@ -15,6 +15,8 @@ namespace BuscadorDeCompatibilidadeWeb.Controllers
         public const string PASTA_APP_DATA = "~/App_Data/";
         public const string NOME_ARQUIVO_EXCEL_VAGAS = "Cadastro Estudante da Pátria - Vaga-report.xlsx";
         public const string NOME_ARQUIVO_EXCEL_VOLUNTARIOS = "Cadastro Estudante da Pátria-report.xlsx";
+        public const string NOME_PLANILHA_EXCEL_VAGAS = "qlJase";
+        public const string NOME_PLANILHA_EXCEL_VOLUNTARIOS = "ohtw0x";
         public const string CONHECIMENTO_1 = "Word";
         public const string CONHECIMENTO_2 = "Excel";
         public const string CONHECIMENTO_3 = "PowerPoint";
@@ -40,7 +42,16 @@ namespace BuscadorDeCompatibilidadeWeb.Controllers
             {
                 using (var ep = new ExcelPackage(fileStream))
                 {
-                    var ws = ep.Workbook.Worksheets["results"];
+                    ExcelWorksheet ws;
+
+                    if (planilha.Contains(NOME_ARQUIVO_EXCEL_VAGAS))
+                    {
+                        ws = ep.Workbook.Worksheets[NOME_PLANILHA_EXCEL_VAGAS];
+                    }
+                    else
+                    {
+                        ws = ep.Workbook.Worksheets[NOME_PLANILHA_EXCEL_VOLUNTARIOS];
+                    }
 
                     //Ignora o cabeçalho
                     int firstContentRow = ws.Dimension.Start.Row + 1;
